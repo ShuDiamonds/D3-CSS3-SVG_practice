@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+<div id="shape1">↓shape1の描画↓<br>
+<div id="shape1">
+</div>
+    <style>
+    svg {
+    border: solid 1px #999;
+    }
+    </style>
+<script>
+var w = 50;
+var h = 50;
+var svg = d3.select("#shape1").append("svg")
+.attr("width", w)
+.attr("height", h);
+svg.append("rect")
+.attr("width", 30)
+.attr("height", 30);
+// rect（四角形）追加に必要な属性は、widthとheight
+// HTMLで記述すると以下
+// <rect x="0" y="0" width="50" height="50" />
+// xとyは左上座標(x,y)。指定なしだと(0,0)となる。
+// 色指定しないと黒で塗りつぶされる
+</script>
+</body>
+</html>
