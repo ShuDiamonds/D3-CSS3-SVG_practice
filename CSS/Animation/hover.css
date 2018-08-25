@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.box {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes rotation {
+  0% {
+    transform: scale(.3);
+  }
+
+  50% {
+    transform: scale(.6) rotate(-45deg);
+    background: red;
+  }
+
+  100% {
+    transform: scale(1) rotate(180deg);
+    background: blue;
+  }
+}
